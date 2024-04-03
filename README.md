@@ -14,4 +14,4 @@ JavaScript a été un langage indispensable au succès de ce projet, étant donn
 .À la fin des 10 questions, notre score apparaît.<br><br>
 
 -Environnement technique :<br>
-HTML, CSS, JavaScript, Cordova, Android Studio.
+HTML, CSS, JavaScript, Bootstrap, Cordova, Android Studio.
