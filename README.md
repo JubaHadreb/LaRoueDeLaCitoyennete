@@ -1,4 +1,4 @@
--Objectifs :
+-Objectifs :<br>
 Le but de ce projet était de créer une application éducative ludique s'adressant aux élèves des écoles primaires et des collèges de Boulogne-Billancourt, dans les Hauts-de-Seine.
 Ce code n'est qu'une démo sur laquelle seuls les quiz concernant les cinquième et sixième années du collège sont fonctionnels.
 JavaScript a été un langage indispensable au succès de ce projet, étant donné le nombre d'animations qu'une solution "gamifiée" requiert.
