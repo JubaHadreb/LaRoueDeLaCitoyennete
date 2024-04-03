@@ -1,0 +1,86 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Menu - La roue de la citoyenneté</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="logo">
+
+                    <img src="img/logo.png" class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3" alt="">
+
+                </div>
+
+                <div id="menus">
+
+                    <ul class="boutons_menu col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4">
+                        <li class="jouer"><p>Jouer</p></li>
+                        <li><p>Scores</p></li>
+                        <li><p>Régles</p></li>
+                        <li><p>Paramétres</p></li>
+                    </ul>
+
+                </div>
+
+                <template id="menu_principal" hidden>
+
+                    <ul class="boutons_menu col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4">
+                        <li class="jouer"><p>Jouer</p></li>
+                        <li><p>Scores</p></li>
+                        <li><p>Régles</p></li>
+                        <li><p>Paramétres</p></li>
+                    </ul>
+
+                </template>
+                
+                <template id="menu_niveau" hidden>
+
+                    <ul class=" boutons_menu col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4">
+                        <li><p>Primaire</p></li>
+                        <li class="college"><p>Collège</p></li>
+                        <li><p>Lycée</p></li>
+                        <li class="retour retour_principal"><p>Retour</p></li>
+                    </ul>
+
+                </template>
+                
+                <template id="menu_college" hidden>
+
+                    <ul class="boutons_menu col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4">
+                        <li class="6eme"><p>6 ème</p></li>
+                        <li class="5eme"><p>5 ème</p></li>
+                        <li><p>4 ème</p></li>
+                        <li><p>3 ème</p></li>
+                        <li class="retour retour_niveau"><p>Retour</p></li>
+                    </ul>
+
+                </template>
+
+            </div>
+
+        </div>
+
+        <!-- JQuery -->
+        <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Handlebars JS -->
+        <script src="js/handlebars.js/handlebars.min.js" type="text/javascript"></script>
+        <!-- App-menu JS -->
+        <script src="js/app-menu.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

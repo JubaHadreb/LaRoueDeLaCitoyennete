@@ -1,0 +1,384 @@
+/**************************Début Page connexion*****************************/
+
+.logo{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+body{
+    background-image:-moz-linear-gradient(to right, #77bfec, #0776bb);
+    background-image:-webkit-linear-gradient(to right, #77bfec, #0776bb);
+    background-image:-o-linear-gradient(to right, #77bfec, #0776bb);
+    background-image:linear-gradient(to right, #77bfec, #0776bb);   
+}
+
+.form-group .pseudo, .form-group .password{
+    background-color: white;
+    height: 34px;
+    padding: 0 !important;
+    margin-bottom: 0px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.form-group label img{
+    margin-top: 20%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (min-width: 425px) {
+    .form-group label img{
+        margin-top: 15%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .form-group label img{
+        margin-top: 7%;
+        height: 70%;
+    }
+}
+
+.form-group div{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.form-group div input{
+    border-radius: 0px 4px 4px 0px;
+    border: 0px;
+}
+
+.form-group div button{
+    color: #fff;
+    background-color: #0776bb;
+    border-color: #fff;
+}
+
+.checkbox{
+    padding-top: 0 !important;
+    color: #fff;
+}
+
+.oublie a{
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.oublie a p{
+    color: #fff;
+    opacity: 0.7;
+}
+
+.form-horizontal .form-group:nth-child(3){
+    margin-bottom: 0;
+}
+
+.nouveau-compte p{
+    padding: 0;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.nouveau-compte div a{
+    font-weight: bold;
+    text-decoration: underline #fff !important;
+    display: inline-block;
+
+}
+
+.passer{
+    margin-top: 40px;
+}
+
+.passer div{
+    height: 20px;
+}
+
+.passer div p{
+    display: inline-block;
+    color: #fff;
+}
+
+.passer div img{
+    height: 100%;
+}
+
+/**************************Fin Page connexion*****************************/
+
+/**************************Début Menu principal*****************************/
+
+.boutons_menu{
+    list-style: none;
+}
+
+.boutons_menu li{
+    background-color: #fff;
+    height: 30px;
+    margin-top: 12px;
+    border-radius: 20px;
+    color: #0776bb;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.boutons_menu li p{
+    padding: 4px 0 0 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.retour{
+    background-color: #FF0000 !important;
+    color: #fff !important;
+}
+
+/**************************Fin Menu principal*****************************/
+
+/**************************Début Bandeau quiz*****************************/
+
+#bandeau{
+    height: 62px;
+    border-bottom: 2px solid #fff;
+    margin: 0 auto;
+}
+
+#retour{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0776bb;
+    background-color: #fff;
+    border: 4px solid #0776bb;
+    border-radius: 10px;
+    padding: 4px 0 4px 0;
+    margin-top: 8px;
+    width: 50%;
+
+}
+
+#retour a{
+    display: block;
+    text-decoration: none;
+}
+
+#retour:hover{
+    background-color: #0776bb;
+    border-color: #fff;
+}
+
+#retour a:hover{
+    color: #fff;
+}
+
+#titre{
+    font-weight: bold;
+    color: #fff;
+    margin-top: 12px;
+    text-align: center;
+}
+
+#points{
+    list-style: none;
+    margin-top: 24px;
+    float: right;
+}
+
+#points li{
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+
+}
+
+/**************************Fin Bandeau principal*****************************/
+
+/**************************Début Roue du quiz*****************************/
+
+#discanimation{
+    height: 360px;
+}
+
+#discs{
+    position: relative;
+    transform:scale(0,0);
+    vertical-align: middle;
+    height: 100%;
+}
+
+#discs.expand{
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    -webkit-transform:scale(1); 
+    -moz-transform:scale(1); 
+    -ms-transform:scale(1); 
+    -o-transform:scale(1); 
+    transform:scale(1);
+}
+
+#pointeur{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#granddisc{
+    position: absolute;
+    width: 100%;
+}
+
+#granddisc.rotated {
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+#petitdisc{
+    position: absolute;
+    width: 100%;
+}
+
+#lancer{
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+#theme{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+#question{
+    opacity: 0;
+    transition: transform 0.5s ease-in-out;
+    color: #fff;
+}
+
+#lesreponses h2{
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+#lesreponses ul{
+    list-style: none;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0;
+    text-align: center;
+}
+
+#lesreponses ul li{
+    padding: 3px 0 3px 0;
+    margin: 6px 0 0 0;
+    background-color: #fff;
+    color: #0776bb;
+}
+
+#lesreponses p, #suivant{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #5FB0E2;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#compteur p{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+#explications{
+    margin-top: 40px;   
+}
+
+#explications h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    color: #0776bb;
+}
+
+#explications p{
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    color: #fff;
+    margin: 0;
+}
+
+/**************************Fin Roue du quiz*****************************/
+
+/**************************Début Score*****************************/
+
+#appreciation{
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+#note{
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    opacity: 0;
+}
+
+#boutons_exit{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+    opacity: 0;
+}
+
+#boutons_exit p{
+    background-color: #5FB0E2;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+#rejouer{
+    width: 40%;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#menu_principal{
+    width: 40%;
+    display: inline-block;
+}
+
+/**************************Fin Fin Score*****************************/
